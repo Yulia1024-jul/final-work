@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Итоговая аттестационная работа</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="shortcut icon" href="gall/icon.jpg" type="jmage/pug">
+</head>
+<body>
+    <div class="background-image"></div>
+    <header class="header">
+        <div class="logo">
+            <img src="gall/avatar.jpg" class="avatar">
+            <h3 class="logo">СНТ "Батина Лощина"</h3>
+        </div>
+        
+        <div class="logo">
+            <a href="index.html" class="logo">На главную</a>
+            <a href="str2.html" class="logo">Для жителей</a>
+            
+        </div>
+    </header>
+
+    <main class="content">
+
+        <section class="block1">
+            <div class="left">
+                <img src="gall/sputnik.png" alt="" class="foto1">
+            </div>
+            <div class="right">
+                <h2 class="invite">Затерянные в лесах Подмосковья...</h2>
+                <p class="text1"></p>...с прекрасной транспортной доступностью.</p>
+                <h4>Координаты геопозиции: 55.394561, 37.669648</h4>
+                <button class="but" onclick="openMap()">Расположение</button>
+             </div>
+       </section>
+
+       
+        <section id="info" class="inf">
+            <h2 class="titleBlock">Заполните форму для обратной связи</h2>
+
+            <form action="#" method="POST" class="form">
+                <div>
+                    <label for="user_name">Ваше имя:</label> <br>
+                    <input type="text" name="mail" id="user_name" placeholder="Иван" class="input"> <br>
+                    <label for="user_email">Ваш email:</label> <br>
+                    <input type="email" name="email" id="user_emaim" placeholder="example@gmail.com" class="input"> <br>
+                </div>
+
+                <div class="radio-group">
+                    <label class="group-label">Ваши планы:</label>
+                    <div class="radio">
+                        <label for="mail">Хочу купить</label>
+                        <input type="radio" id="pay" name="consent" value="pay">
+                    </div>
+                    <div class="radio">
+                        <label for="grupp">Просто интересуюсь</label>
+                        <input type="radio" id="interest" name="consent" value="interest"><br>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <label for="for_message">Остались вопросы?</label> <br>
+                    <textarea name="message" rows="5" cols="100" placeholder="Введите ваше сообшение..."></textarea><br>
+                </div>       
+                <div class="start">               
+                    <input type="submit" value="Отправить заявку" class="name"> 
+                    <input type="reset" value="Очистить форму" class="name">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>2025 СНТ "Батина Лощина" - сайт на стадии разработки. Все права защищены.</p>
+    </footer>
+
+    <script>
+        function openMap() {
+         window.open('https://yandex.ru/maps/geo/snt_batina_loshchina_zhukovo/53202037/?ll=37.671943%2C55.397582&z=14', '_blank');
+    }
+</script>
+</html>
